@@ -50,7 +50,7 @@ const init = () => {
             type: 'checkbox',
             name: 'license',
             message: 'What type of license does your project have?',
-            choices: ['MIT License', 'GNU GPLv3', 'Apache License 2.0']
+            choices: ['MIT', 'GNU GPLv3', 'Apache 2.0']
 
         },
         {
