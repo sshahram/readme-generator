@@ -34,44 +34,104 @@ const init = () => {
             type: 'checkbox',
             name: 'contentTable',
             message: 'What sections does your README file include?',
-            choices: ['Description', 'Table of Contents', 'Installation', 'Usage', 'License', 'Contributing', 'Tests', 'Questions']
+            choices: [{name: 'Description', value: true}, 
+            {name: 'Table of Contents', value: false}, 
+            {name: 'Installation', value: false}, 
+            {name: 'Usage', value: true}, 
+            {name: 'License', value: false}, 
+            {name: 'Contributing', value: false}, 
+            {name: 'Tests', value: false}, 
+            {name: 'Questions', value: false}
+        ]
         },
         {
             type: 'input',
             name: 'installation',
-            message: 'Please provide installation instructions:'
+            message: 'Please provide installation instructions:',
+            when: ({contentTable}) => {
+                if(contentTable.indexOf('Installation') > -1) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
         },
         {
             type: 'input',
             name: 'usage',
-            message: 'Please provide instructions and examples for use:'
+            message: 'Please provide instructions and examples on how to use your application: (Required)',
+            validate: usageInput => {
+                if(usageInput) {
+                    return true;
+                } else {
+                    console.log('Please provide instructions and examples on how to use your application!');
+                    return false;
+                }
+            }
         },
         {
             type: 'checkbox',
             name: 'license',
             message: 'What type of license does your project have?',
-            choices: ['MIT', 'GNU GPLv3', 'Apache 2.0']
+            choices: ['MIT', 'GNU GPLv3', 'Apache 2.0'],
+            when: ({contentTable}) => {
+                if(contentTable.indexOf('License') > -1) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
 
         },
         {
             type: 'input',
             name: 'contributions',
-            message: 'Please provide guidelines on how to contribute to your project:'
+            message: 'Please provide guidelines on how to contribute to your project:',
+            when: ({contentTable}) => {
+                if(contentTable.indexOf('Contributing') > -1) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
         },
         {
             type: 'input',
             name: 'tests',
-            message: 'What are test cases for your application and how can we run them?'
+            message: 'What are test cases for your application and how can we run them?',
+            when: ({contentTable}) => {
+                if(contentTable.indexOf('Tests') > -1) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
         },
         {
             type: 'input',
             name: 'github',
-            message: 'Enter your GitHub Username:'
+            message: 'Enter your GitHub Username: (Required)',
+            validate: githubInput => {
+                if(githubInput) {
+                    return true;
+                } else {
+                    console.log('Please enter your GitHub username!');
+                    return false;
+                }
+            }
         },
         {
             type: 'input',
             name: 'email',
-            message: "Enter your email address"
+            message: "Enter your email address",
+            validate: emailInput => {
+                if(emailInput) {
+                    return true;
+                } else {
+                    console.log('Please enter your email address!');
+                    return false;
+                }
+            }
         }
     ])
 };
