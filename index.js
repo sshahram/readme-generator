@@ -86,7 +86,7 @@ const init = () => {
         },
         {
             type: 'input',
-            name: 'contributions',
+            name: 'Contributing',
             message: 'Please provide guidelines on how to contribute to your project:',
             when: ({contentTable}) => {
                 if(contentTable.indexOf('Contributing') > -1) {
