@@ -1,5 +1,6 @@
 // TODO: Include packages needed for this application
 const fs = require('fs');
+const inquirer = require('inquirer');
 // TODO: Create an array of questions for user input
 // TODO: Create a function to initialize app
 const init = () => {
@@ -34,14 +35,14 @@ const init = () => {
             type: 'checkbox',
             name: 'contentTable',
             message: 'What sections does your README file include?',
-            choices: [{name: 'Description', value: true}, 
-            {name: 'Table of Contents', value: false}, 
-            {name: 'Installation', value: false}, 
-            {name: 'Usage', value: true}, 
-            {name: 'License', value: false}, 
-            {name: 'Contributing', value: false}, 
-            {name: 'Tests', value: false}, 
-            {name: 'Questions', value: false}
+            choices: [{name: 'Description', checked: true}, 
+            {name: 'Table of Contents', checked: false}, 
+            {name: 'Installation', checked: false}, 
+            {name: 'Usage', checked: true}, 
+            {name: 'License', checked: false}, 
+            {name: 'Contributing', checked: false}, 
+            {name: 'Tests', checked: false}, 
+            {name: 'Questions', checked: false}
         ]
         },
         {
@@ -73,7 +74,7 @@ const init = () => {
             type: 'checkbox',
             name: 'license',
             message: 'What type of license does your project have?',
-            choices: ['MIT', 'GNU GPLv3', 'Apache 2.0'],
+            choices: ['MIT', 'GNU', 'Apache'],
             when: ({contentTable}) => {
                 if(contentTable.indexOf('License') > -1) {
                     return true;
