@@ -6,11 +6,12 @@ const renderTableOfContents = contentTable => {
     if(!item){
       return '';
     } else {
-      listOfContent += `*[${item}](#${(item).toLowerCase().split(' ').join('-')})`;
+      listOfContent += `*[${item}](#${(item).toLowerCase().split(' ').join('-')})
+`;
     }
   });
   return `## Table of Contents
-  ${listOfContent}`;
+${listOfContent}`;
 }
 
 // create a function that returns installation
