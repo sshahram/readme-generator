@@ -1,3 +1,17 @@
+// create a function that returns description
+
+// create a function that returns table of contents
+
+// create a function that returns installation
+
+// create a function that returns usage
+
+// create a function that returns contributing
+
+// create a function that returns tests
+
+// create a function that returns questions
+
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 const renderLicenseBadge = license => {
@@ -29,10 +43,10 @@ const renderLicenseSection = license =>  {
     return `
     Please see the following link for license information: ${renderLicenseLink(license)}`
   }
-}
+};
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
+const generateMarkdown = data => {
   return `# ${data.title}
 
 `;
