@@ -1,10 +1,10 @@
-# testing
+# README Generator
 
-![GitHub license badge](https://img.shields.io/badge/license-Apache-blue.svg)
+![GitHub license badge](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## Description
 
-testing
+This project provides a tool to create a professional readme for the user based on their answers to some questions.
 ## Table of Contents
 * [Description](#description)
 * [Table of Contents](#table-of-contents)
@@ -15,18 +15,13 @@ testing
 ## Installation
 Please see below for installation requirements:
 
-testing
+Please first install node.js and then run the following command in your terminal: npm install
 
 ## Usage
-testing
+First run git clone <project> into your terminal. Then, run node index.
 ## License
 Please see the following link for license information: 
-[GitHub-license](https://raw.githubusercontent.com/sshahram/readme-generator/develop/utils/license-Apache.txt)
+[GitHub-license](https://raw.githubusercontent.com/sshahram/readme-generator/develop/utils/license-MIT.txt)
 
 
-## Questions
-If you have any questions please use the following two links to contact me:
 
-* https://github.com/testing
-
-* testing

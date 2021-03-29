@@ -113,11 +113,10 @@ const init = () => {
             type: 'input',
             name: 'github',
             message: 'Enter your GitHub Username: (Required)',
-            validate: githubInput => {
-                if(githubInput) {
+            when: ({contentTable}) => {
+                if(contentTable.indexOf('Questions') > -1) {
                     return true;
                 } else {
-                    console.log('Please enter your GitHub username!');
                     return false;
                 }
             }
@@ -126,11 +125,10 @@ const init = () => {
             type: 'input',
             name: 'email',
             message: "Enter your email address",
-            validate: emailInput => {
-                if(emailInput) {
+            when: ({contentTable}) => {
+                if(contentTable.indexOf('Questions') > -1) {
                     return true;
                 } else {
-                    console.log('Please enter your email address!');
                     return false;
                 }
             }
