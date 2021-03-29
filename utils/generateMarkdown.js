@@ -1,6 +1,12 @@
 // create a function that returns description
-
 // create a function that returns table of contents
+const renderTableOfContents = contentTable => {
+  let listOfContent = '';
+  contentTable.forEach((item) => {
+    listOfContent += `*[${item.header}](#${(item.header).toLowerCase()})`;
+  });
+  return listOfContent;
+}
 
 // create a function that returns installation
 
