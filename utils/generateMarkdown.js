@@ -89,7 +89,7 @@ const renderLicenseLink = license => {
     return '';
   } else {
     return `
-![alt=GitHub-license](https://raw.githubusercontent.com/sshahram/readme-generator/develop/utils/license-${license}.txt)`
+[GitHub-license](https://raw.githubusercontent.com/sshahram/readme-generator/develop/utils/license-${license}.txt)`
   }
 };
 
