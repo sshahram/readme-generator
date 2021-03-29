@@ -3,9 +3,14 @@
 const renderTableOfContents = contentTable => {
   let listOfContent = '';
   contentTable.forEach((item) => {
-    listOfContent += `*[${item.header}](#${(item.header).toLowerCase()})`;
+    if(!item){
+      return '';
+    } else {
+      listOfContent += `*[${item}](#${(item).toLowerCase()})`;
+    }
   });
-  return listOfContent;
+  return `## Table of Contents
+  ${listOfContent}`;
 }
 
 // create a function that returns installation
@@ -98,6 +103,7 @@ const generateMarkdown = data => {
 ${renderLicenseBadge(data.license)}
 ## Description
 ${data.description}
+${renderTableOfContents(data.contentTable)}
 `;
 };
 
