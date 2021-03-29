@@ -1,6 +1,6 @@
 # testing
 
-![GitHub license badge](https://img.shields.io/badge/license-MIT-blue.svg)
+![GitHub license badge](https://img.shields.io/badge/license-GNU-blue.svg)
 
 ## Description
 
@@ -26,7 +26,7 @@ testing
 
 ## License
 Please see the following link for license information: 
-![GitHub license](https://raw.githubusercontent.com/sshahram/readme-generator/develop/utils/license-MIT.txt)
+![GitHub-license](https://raw.githubusercontent.com/sshahram/readme-generator/develop/utils/license-GNU.txt)
 
 ## Contributing
 testing
@@ -37,6 +37,6 @@ testing
 ## Questions
 If you have any questions please use the following two links to contact me:
 
-* [GitHub Account](https://github.com/testing)
+* https://github.com/sshahram
 
-* [Email Address](testing)
+* shirin.shahram23@gmail.com

@@ -65,9 +65,9 @@ const renderQuestionSection = (email, github) => {
     return `## Questions
 If you have any questions please use the following two links to contact me:
 
-* [GitHub Account](https://github.com/${github})
+* https://github.com/${github}
 
-* [Email Address](${email})`;
+* ${email}`;
   }
 }
 
@@ -89,7 +89,7 @@ const renderLicenseLink = license => {
     return '';
   } else {
     return `
-![GitHub license](https://raw.githubusercontent.com/sshahram/readme-generator/develop/utils/license-${license}.txt)`
+![GitHub-license](https://raw.githubusercontent.com/sshahram/readme-generator/develop/utils/license-${license}.txt)`
   }
 };
 
