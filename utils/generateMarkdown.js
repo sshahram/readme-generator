@@ -89,7 +89,7 @@ const renderLicenseLink = license => {
     return '';
   } else {
     return `
-![GitHub-license](https://raw.githubusercontent.com/sshahram/readme-generator/develop/utils/license-${license}.txt)`
+![alt=GitHub-license](https://raw.githubusercontent.com/sshahram/readme-generator/develop/utils/license-${license}.txt)`
   }
 };
 
@@ -114,15 +114,10 @@ ${renderLicenseBadge(data.license)}
 ${data.description}
 ${renderTableOfContents(data.contentTable)}
 ${renderInstallationSection(data.installation)}
-
 ${renderUsageSection(data.usage)}
-
 ${renderLicenseSection(data.license)}
-
 ${renderContributingSection(data.contributing)}
-
 ${renderTestSection(data.tests)}
-
 ${renderQuestionSection(data.email, data.github)}
 `;
 };
