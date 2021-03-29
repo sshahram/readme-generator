@@ -6,9 +6,8 @@ const renderTableOfContents = contentTable => {
     if(!item){
       return '';
     } else {
-      listOfContent += `
-      * [${item}](#${(item).toLowerCase().split(' ').join('-')})
-      `;
+      listOfContent += `* [${item}](#${(item).toLowerCase().split(' ').join('-')})
+`;
     }
   });
   return `## Table of Contents
@@ -90,7 +89,7 @@ const renderLicenseLink = license => {
     return '';
   } else {
     return `
-![GitHub license](./utils/license-${license}.txt)`
+![GitHub license](https://raw.githubusercontent.com/sshahram/readme-generator/develop/utils/license-${license}.txt)`
   }
 };
 

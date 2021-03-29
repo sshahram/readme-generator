@@ -1,50 +1,42 @@
-# test1
+# testing
 
-![GitHub license badge](https://img.shields.io/badge/license-Apache-blue.svg)
+![GitHub license badge](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## Description
 
-test1
+testing
 ## Table of Contents
+* [Description](#description)
+* [Table of Contents](#table-of-contents)
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
 
-      * [Description](#description)
-      
-      * [Table of Contents](#table-of-contents)
-      
-      * [Installation](#installation)
-      
-      * [Usage](#usage)
-      
-      * [License](#license)
-      
-      * [Contributing](#contributing)
-      
-      * [Tests](#tests)
-      
-      * [Questions](#questions)
-      
 ## Installation
 Please see below for installation requirements:
 
-test1
+testing
 
 
 ## Usage
-test1
+testing
 
 ## License
 Please see the following link for license information: 
-![GitHub license](./utils/license-Apache.txt)
+![GitHub license](https://raw.githubusercontent.com/sshahram/readme-generator/develop/utils/license-MIT.txt)
 
 ## Contributing
-test1
+testing
 
 ## Tests
-test1
+testing
 
 ## Questions
 If you have any questions please use the following two links to contact me:
 
-* [GitHub Account](https://github.com/sshahram)
+* [GitHub Account](https://github.com/testing)
 
-* [Email Address](shirin.shahram23@gmail.com)
+* [Email Address](testing)
