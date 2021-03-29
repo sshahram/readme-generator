@@ -6,7 +6,8 @@ const renderTableOfContents = contentTable => {
     if(!item){
       return '';
     } else {
-      listOfContent += `* [${item}](#${(item).toLowerCase().split(' ').join('-')})
+      listOfContent += `
+      * [${item}](#${(item).toLowerCase().split(' ').join('-')})
       `;
     }
   });
