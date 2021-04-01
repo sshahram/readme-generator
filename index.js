@@ -1,7 +1,6 @@
 // TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
-const { userInfo } = require('os');
 const generateMarkdown = require('./utils/generateMarkdown');
 // TODO: Create an array of questions for user input
 // TODO: Create a function to initialize app
@@ -152,13 +151,13 @@ const promptScreenshots = screenshotData => {
         // Alt Text
         {
             type: 'input',
-            name: 'name',
+            name: 'nameScreenshot',
             message: 'What is the name of your screenshot?',
         },
         // Link
         {
             type: 'input',
-            name: 'link',
+            name: 'linkScreenshot',
             message: "Please provide the link to your screenshot: (Required)",
             validate: linkInput => {
                 if (linkInput) {
@@ -171,7 +170,7 @@ const promptScreenshots = screenshotData => {
         // description
         {
             type: 'input',
-            name: 'description',
+            name: 'descriptionScreenshot',
             message: 'Please enter a short description for your screenshot:'
         },
         // add screenshot

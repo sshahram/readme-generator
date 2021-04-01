@@ -71,6 +71,20 @@ If you have any questions please use the following two links to contact me:
   }
 }
 
+// create a function that returns screenshots
+const renderScreenshotSection = screenshot => {
+  let multipleScreenshots = '';
+  if(!screenshot) {
+    return '';
+  } else { screenshot.forEach(itemScreenshot => {
+    multipleScreenshots += `${itemScreenshot.descriptionScreenshot}
+![alt=${itemScreenshot.nameScreenshot}](${itemScreenshot.linkScreenshot})`;
+  });
+    return `## Screenshots
+${multipleScreenshots}`;
+  }
+}
+
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 const renderLicenseBadge = license => {
@@ -117,6 +131,7 @@ ${renderUsageSection(data.usage)}
 ${renderLicenseSection(data.license)}
 ${renderContributingSection(data.contributing)}
 ${renderTestSection(data.tests)}
+${renderScreenshotSection(data.screenshotArr)}
 ${renderQuestionSection(data.email, data.github)}
 `;
 };
