@@ -108,7 +108,6 @@ Please see the following link for license information: ${renderLicenseLink(licen
 const generateMarkdown = data => {
   return `# ${data.name}
 ${renderLicenseBadge(data.license)}
-
 ## Description
 
 ${data.description}
