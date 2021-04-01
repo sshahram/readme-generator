@@ -31,7 +31,7 @@ Please clone the repo and do the changes locally on your machine. When you are d
 Run the following command "node index" multiple time in your terminal. Each time include or exclude some sections and checkout the results.
 ## Screenshots
 Here are the snapshots of different sections of a professional readme file:
-![alt=professional-readme](../utils/images/p-readme-g.jpg)
+![alt=professional-readme](./utils/images/p-readme-g.jpg)
 ## Questions
 If you have any questions please use the following two links to contact me:
 
