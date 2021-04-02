@@ -32,6 +32,9 @@ Run the following command "node index" multiple time in your terminal. Each time
 ## Screenshots
 Here are the snapshots of different sections of a professional readme file:
 ![alt=professional-readme](./utils/images/p-readme-g.jpg)
+## Link to Demo Video
+Please click on the following link to see the Demo video for this project:
+[Link to Demo](https://drive.google.com/file/d/1jaQaABJs8ruHre13LwcBkMvlFn-eh6Cn/view)
 ## Questions
 If you have any questions please use the following two links to contact me:
 
