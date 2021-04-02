@@ -113,7 +113,7 @@ const init = () => {
         {
             type: 'input',
             name: 'github',
-            message: 'Enter your GitHub Username: (Required)',
+            message: 'Enter your GitHub Username:',
             when: ({ contentTable }) => {
                 if (contentTable.indexOf('Questions') > -1) {
                     return true;
